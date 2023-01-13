@@ -1,0 +1,118 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+}
+.container .formLogin {
+  width: 750px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.container .formLogin .Form {
+  height: 100%;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .formLogin .Form .content-1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: 80%;
+}
+.container .formLogin .Form .content-1 h1 {
+  margin-bottom: 10px;
+}
+.container .formLogin .Form .content-1 .text-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgb(148, 148, 148);
+}
+.container .formLogin .Form .content-1 .text-header p {
+  width: 200px;
+  font-size: 18px;
+}
+.container .formLogin .Form .content-1 .footer-form {
+  display: flex;
+  align-items: center;
+}
+.container .formLogin .Form .content-1 .footer-form input {
+  width: 25px;
+  position: relative;
+  bottom: 11px;
+}
+.container .formLogin .Form .content-1 .footer-form p {
+  font-size: 12px;
+  margin: 20px 0;
+  color: rgb(148, 148, 148);
+}
+.container .formLogin .Form .content-1 input {
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+.container .formLogin .Form .content-1 input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+.container .formLogin .Form .content-1 button {
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 20px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #1c334e;
+  transition: 0.3s;
+}
+.container .formLogin .Form .content-1 button:hover {
+  background-color: #182e47;
+}
+.container .formLogin .Form .content-1 .line {
+  margin: 25px 0;
+  justify-content: center;
+  display: flex;
+  color: rgb(173, 173, 173);
+}
+.container .formLogin .Form .content-1 .line h4 {
+  position: relative;
+  bottom: 10px;
+  margin: 0 10px;
+}
+.container .formLogin .Form .content-1 .line div {
+  border-top: 1px solid black;
+  width: 130px;
+  border-color: rgb(173, 173, 173);
+}
+.container .formLogin .Form .content-2 {
+  height: 10%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .formLogin .Form .content-2 h4 {
+  font-weight: 300;
+}
+.container .formLogin .Form .content-2 h4 a {
+  font-weight: bold;
+  color: #235ca5;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Login.css.map */

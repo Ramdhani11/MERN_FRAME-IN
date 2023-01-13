@@ -1,0 +1,92 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.home .main-content .header {
+  width: 470px;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.home .main-content .card {
+  margin-bottom: 10px;
+  width: 470px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.home .main-content .card .card-header {
+  border-bottom: 1px solid #ccc;
+  width: inherit;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.home .main-content .card .card-header .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+}
+.home .main-content .card .card-header h5 {
+  padding-left: 10px;
+}
+.home .main-content .card .card-content {
+  width: inherit;
+}
+.home .main-content .card .card-content img {
+  width: inherit;
+}
+.home .main-content .card .card-footer {
+  width: inherit;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+}
+.home .main-content .card .card-footer .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.home .main-content .card .card-footer .icons.noimg div {
+  display: flex;
+}
+.home .main-content .card .card-footer .icons.noimg .likescount {
+  display: flex;
+  align-items: center;
+}
+.home .main-content .card .card-footer .icons.noimg .likescount h5 {
+  margin-left: 5px;
+}
+.home .main-content .card .card-footer .icons #chat {
+  width: 30px;
+  transform: scaleX(-1);
+  margin-left: 10px;
+}
+.home .main-content .card .card-footer .text-items.noimg {
+  padding-top: 10px;
+}
+.home .main-content .card .card-footer .text-items p {
+  font-size: 13px;
+}
+.home .main-content .card .card-footer .text-items p span {
+  color: black;
+  font-weight: bold;
+}
+.home .main-content .card .card-footer .text-items span {
+  color: rgb(136, 134, 134);
+  font-size: 13px;
+}
+.home .informasi {
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,326 @@
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container-fluid .sidebar {
+  width: 18vw;
+  height: 100vh;
+  border-right: 1px solid #ccc;
+  padding: 25px;
+}
+.container-fluid .sidebar h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+.container-fluid .sidebar .container-side {
+  width: 100%;
+  height: 90%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-fluid .sidebar .container-side ul {
+  list-style-type: none;
+}
+.container-fluid .sidebar .container-side ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container-fluid .sidebar .container-side ul li img {
+  width: 30px;
+}
+.container-fluid .sidebar .container-side ul li .link {
+  padding-left: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+.container-fluid .sidebar .container-side h4 {
+  cursor: pointer;
+}
+.container-fluid .sidebar .modal {
+  display: none;
+}
+.container-fluid .sidebar .modalActive {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container-fluid .sidebar .modalActive .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+.container-fluid .sidebar .modalActive .post-card {
+  width: 450px;
+  height: 490px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+.container-fluid .sidebar .modalActive .post-card.active {
+  width: 790px;
+}
+.container-fluid .sidebar .modalActive .post-card.active .header {
+  width: inherit;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-weight: 500;
+  line-height: 45px;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG {
+  display: flex;
+  width: inherit;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .popupIMG {
+  width: 50%;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .content {
+  height: calc(100% - 45px);
+  width: 50%;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .content .user .photo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .content .user textarea {
+  resize: none;
+  border: none;
+  width: 100%;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .content .user textarea:focus {
+  outline: none;
+}
+.container-fluid .sidebar .modalActive .post-card.active .responeIMG .footer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 45px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-fluid .sidebar .modalActive .post-card .header {
+  width: inherit;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-weight: 500;
+  line-height: 45px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .content {
+  height: calc(100% - 45px);
+  width: 450px;
+  padding: 10px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .content .user .photo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .content .user .photo div {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .content .user textarea {
+  resize: none;
+  border: none;
+  width: 100%;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .content .user textarea:focus {
+  outline: none;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer {
+  position: absolute;
+  bottom: 0;
+  width: 450px;
+  height: 45px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 30px;
+  background-color: #1c334e;
+  color: #fff;
+  border-radius: 5px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer label:hover {
+  background-color: #182e47;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer label.delete {
+  background-color: rgb(240, 30, 30);
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer label.delete:hover {
+  background-color: rgb(255, 0, 0);
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer label img {
+  width: 24px;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer input {
+  display: none;
+}
+.container-fluid .sidebar .modalActive .post-card .responeIMG .footer button {
+  color: #182e47;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.container-fluid .outlet {
+  width: 82vw;
+  height: 100vh;
+  padding: 30px 140px;
+  overflow: auto;
+  background-color: #fafafa;
+}
+.container-fluid .outlet .home {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container-fluid .outlet .home .main-content .header {
+  width: 470px;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.container-fluid .outlet .home .main-content .card {
+  margin-bottom: 10px;
+  width: 470px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container-fluid .outlet .home .main-content .card .card-header {
+  border-bottom: 1px solid #ccc;
+  width: inherit;
+  height: 60px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+}
+.container-fluid .outlet .home .main-content .card .card-header .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.container-fluid .outlet .home .main-content .card .card-header .profile img {
+  width: inherit;
+}
+.container-fluid .outlet .home .main-content .card .card-header h5 {
+  padding-left: 10px;
+}
+.container-fluid .outlet .home .main-content .card .card-header .delete {
+  position: absolute;
+  right: 20px;
+}
+.container-fluid .outlet .home .main-content .card .card-header .delete img {
+  width: 25px;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: red;
+}
+.container-fluid .outlet .home .main-content .card .card-content {
+  width: inherit;
+}
+.container-fluid .outlet .home .main-content .card .card-content img {
+  width: inherit;
+}
+.container-fluid .outlet .home .main-content .card .card-footer {
+  width: inherit;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons.noimg {
+  position: relative;
+  top: 10px;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons.noimg div {
+  display: flex;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons.noimg .likescount {
+  display: flex;
+  align-items: center;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons.noimg .likescount h5 {
+  margin-left: 5px;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .icons #chat {
+  width: 30px;
+  transform: scaleX(-1);
+  margin-left: 10px;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .text-items.noimg {
+  padding-top: 10px;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .text-items p {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .text-items p span {
+  color: black;
+  font-weight: bold;
+}
+.container-fluid .outlet .home .main-content .card .card-footer .text-items span {
+  color: rgb(136, 134, 134);
+  font-size: 13px;
+}
+.container-fluid .outlet .home .informasi {
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/*# sourceMappingURL=Layout.css.map */

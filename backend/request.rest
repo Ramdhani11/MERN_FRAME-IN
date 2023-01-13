@@ -1,0 +1,20 @@
+POST  http://localhost:3001/create/post
+Content-Type: application/json
+
+{
+  "userId" : "63b2cb56da4e0b151b53d7b7",
+  "title":"ini hanya test",
+  "body":"asdasdas"
+}
+###
+POST  http://localhost:3001/posts/comments/63b3d2d0259394c90f3a6ad3
+Content-Type: application/json
+
+{
+  "userId" : "63b2cb56da4e0b151b53d7b7",
+  "body":"Anyarrrraa"
+}
+###
+GET  http://localhost:3001/posts
+###
+DELETE http://localhost:3001/posts/63be0b8e46373aaddcf04733

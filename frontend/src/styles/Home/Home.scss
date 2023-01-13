@@ -1,0 +1,100 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .main-content {
+    .header {
+      width: 470px;
+      height: 100px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .card {
+      margin-bottom: 10px;
+      width: 470px;
+      border: 1px solid #ccc;
+      // height: 830px;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      .card-header {
+        border-bottom: 1px solid #ccc;
+        width: inherit;
+        height: 60px;
+        display: flex;
+        // border: 1px solid;
+        align-items: center;
+        // background-color: aqua;
+        padding: 10px;
+        .profile {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #000;
+        }
+        h5 {
+          padding-left: 10px;
+        }
+      }
+      .card-content {
+        width: inherit;
+        img {
+          width: inherit;
+        }
+      }
+      .card-footer {
+        width: inherit;
+        // height: 180px;
+        padding: 10px;
+        position: relative;
+        top: -10px;
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          &.noimg {
+            div {
+              display: flex;
+            }
+            .likescount {
+              display: flex;
+              align-items: center;
+              h5 {
+                margin-left: 5px;
+              }
+            }
+          }
+          #chat {
+            width: 30px;
+            transform: scaleX(-1);
+            margin-left: 10px;
+          }
+        }
+        .text-items {
+          &.noimg {
+            padding-top: 10px;
+          }
+          p {
+            font-size: 13px;
+            span {
+              color: black;
+              font-weight: bold;
+            }
+          }
+          span {
+            color: rgb(136, 134, 134);
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .informasi {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
